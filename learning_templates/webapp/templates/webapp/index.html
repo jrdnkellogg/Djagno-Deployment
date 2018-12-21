@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "webapp/base.html" %}
+  {% block body_block %}
+    <div class="jumbotron">
+      <h1>Welcome to Index</h1>
+      <h1>This is index.html page showing!</h1>
+      <!-- <h1>{{ text|upper }}</h1> -->
+      <h1>{{ text|cut:"world" }}</h1>
+      <!-- cuts any text that is added as argument -->
+      <h1>{{ number|add:"99" }}</h1>
+    </div>
+  {% endblock %}
